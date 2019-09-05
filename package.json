@@ -8,7 +8,7 @@
   },
   "author": "zto",
   "license": "ISC",
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "^7.4.3",
     "@babel/preset-env": "^7.4.3",
     "babel-eslint": "^10.0.1",
