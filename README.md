@@ -1,8 +1,47 @@
 ## webpack 打包构建 vue
 
-### 技术栈
+### 功能清单
 
-[vue](https://cn.vuejs.org/v2/guide/) + [vuex](https://vuex.vuejs.org/) + [vue-router](https://router.vuejs.org/zh/) + [ES6](http://caibaojian.com/es6/) + [ElementUI](https://element.eleme.cn/2.0/#/zh-CN) + [openlayrs](https://openlayers.org/en/latest/examples/) + [videojs](https://videojs.com/) + [videojs-flvjs](https://github.com/mister-ben/videojs-flvjs#readme) + [flv.js](https://github.com/Bilibili/flv.js#readme) + [jquery@2*](https://www.jquery123.com/category/traversing/tree-traversal/) + [bootstarp@3*](https://v3.bootcss.com/) + [Bootstrap 3 Date/Time Picker](http://eonasdan.github.io/bootstrap-datetimepicker/) + [Sass](https://sass-lang.com/guide) + [Moment.js](https://momentjs.com/)
+支持es6✅
+
+支持typescript
+
+支持sass✅
+
+自动生成index.html文件✅
+
+二进制文件加载✅
+
+支持.vue单文件组件解析✅
+
+模块热替换✅
+
+eslint(vue)代码规范化检查✅
+
+本地mock✅
+
+集成数据请求库axios✅
+
+集成elementUI库✅
+
+环境区分
+
+dev ✅
+
+prod ✅
+
+proxy（前后端联调，接口请求代理到目标主机）✅
+处理图片 -------
+
+资源文件抽离 ————————
+
+合并压缩js
+
+hash资源文件 ✅
+
+资源文件产出sourcemap
+
+构建分离
 
 ### 安装
 
