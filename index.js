@@ -4,6 +4,7 @@ const fat = require("./lib/build/webpack.fat");
 const mock = require("./lib/build/webpack.mock");
 const proxyDev = require("./lib/build/webpack.proxy.dev");
 const proxyFat = require("./lib/build/webpack.proxy.fat");
+const proxyPerson = require("./lib/build/webpack.proxy.person");
 const proxyMock = require("./lib/build/webpack.proxy.mock");
 
 module.exports = function(env){
@@ -24,6 +25,9 @@ module.exports = function(env){
     }
     if(env.proxyFat){
         return proxyFat;
+    }
+    if(env.proxyPerson){
+        return proxyPerson;
     }
     if(env.proxyMock){
         return proxyMock;
