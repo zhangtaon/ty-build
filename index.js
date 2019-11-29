@@ -1,3 +1,4 @@
+const merge = require('webpack-merge');
 const prod = require("./lib/build/webpack.prod");
 const dev = require("./lib/build/webpack.dev");
 const fat = require("./lib/build/webpack.fat");
@@ -7,29 +8,29 @@ const proxyFat = require("./lib/build/webpack.proxy.fat");
 const proxyPerson = require("./lib/build/webpack.proxy.person");
 const proxyMock = require("./lib/build/webpack.proxy.mock");
 
-module.exports = function(env){
+module.exports = function(env,config){
     if(env.prod){
-        return prod;
+        return merge(prod,config);
     }
     if(env.fat){
-        return fat;
+        return merge(fat,config);
     }
     if(env.dev){
-        return dev;
+        return merge(dev,config);
     }
     if(env.start){
-        return mock;
+        return merge(mock,config);
     }
     if(env.proxyDev){
-        return proxyDev;
+        return merge(proxyDev,config);
     }
     if(env.proxyFat){
-        return proxyFat;
+        return merge(proxyFat,config);
     }
     if(env.proxyPerson){
-        return proxyPerson;
+        return merge(proxyPerson,config);
     }
     if(env.proxyMock){
-        return proxyMock;
+        return merge(proxyMock,config);
     }
 }
